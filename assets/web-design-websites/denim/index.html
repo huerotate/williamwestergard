@@ -147,12 +147,13 @@
 <script>
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("content").style.visibility = "hidden";
+        document.querySelector("rectangle").style.visibility = "none";
     } else {
-        document.querySelector("content").style.visibility = "visible";
+        document.querySelector("content").style.visibility = "block";
     }
 };
 </script>
+
 
 </body>
 </html>
