@@ -116,6 +116,7 @@ a:hover {
   font-size:17vw;
   line-height: 40vh;
   margin-left:-1vw;
+  z-index:10;
 }
 
 h2 {
@@ -128,6 +129,7 @@ h2 {
   width:30vw;
   line-height: 22vh;
   letter-spacing: .2vh;
+    z-index:10;
 }
 
 h3 {
@@ -139,6 +141,7 @@ h3 {
   width:100%;
   line-height: 15vh;
   letter-spacing: .2vh;
+    z-index:10;
 }
 
 
