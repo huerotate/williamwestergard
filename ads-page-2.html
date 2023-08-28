@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="responsive.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+<script>
+    // this function must be defined in the global scope
+    window.fadeIn = function(obj) {
+        $(obj).fadeIn(1000);
+    }
+    </script>
 
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
 
@@ -68,19 +75,19 @@
             <section>
         <div class="image-4">
         
-            <img src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225929/advertising/swdjeiwxjzbgzwrelakk.jpg">
+            <img onload="fadeIn(this)" style="display:none;" src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225929/advertising/swdjeiwxjzbgzwrelakk.jpg">
         </div>
     </section>
 
     <section>
         <div class="image-5">
-            <img src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225929/advertising/kluenemub1ibb0t1t41e.jpg" loading="lazy">
+            <img onload="fadeIn(this)" style="display:none;" src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225929/advertising/kluenemub1ibb0t1t41e.jpg">
         </div>
     </section>
 
     <section>
         <div class="image-6">
-            <img src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225930/advertising/snvjcxscyvhokmsq9vyw.jpg" loading="lazy">
+            <img onload="fadeIn(this)" style="display:none;" src="https://res.cloudinary.com/dbvcotnqt/image/upload/q_auto,f_auto/v1693225930/advertising/snvjcxscyvhokmsq9vyw.jpg">
         </div>
     </section>
 
