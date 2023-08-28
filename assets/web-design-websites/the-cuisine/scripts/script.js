@@ -39,7 +39,7 @@ gsap.from("button", 1.2, {
 
 function menu() {
 
-gsap.to(".menu, .left-side-bg", 1.5, {
+gsap.to("#menu, .left-side-bg", 1.5, {
     left:"50%",
     ease: "power3.inOut",
 })
@@ -75,7 +75,7 @@ gsap.to(".info ", 1.5, {
 
 function closeMenu() {
 
-    gsap.to(".menu, .left-side-bg", 1, {
+    gsap.to("#menu, .left-side-bg", 1, {
         left:"100%",
         ease: "power3.inOut",
     })

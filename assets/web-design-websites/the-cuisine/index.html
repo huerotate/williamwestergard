@@ -43,7 +43,7 @@
 <img class="image-1" src="assets/img/image-1.jpg">
 
 
-<div class="menu">
+<div id="menu">
 <div class="left-side-bg"></div>
 <div class="close-button" onclick="closeMenu()"> x </div>
 
@@ -86,12 +86,17 @@
 
 
 
-    <script>
-        function start(){
-        TweenLite.from(document.getElementsByClassName("menu"), 1, {css:{autoAlpha:0}}); 
-        }
-        window.onload = start;
-           </script> 
+<script src="scripts/script.js"></script>
+
+
+<script>
+    function start(){
+    TweenLite.from(document.getElementById("menu"), 1, {css:{autoAlpha:0}}); 
+    }
+    window.onload = start;
+       </script> 
+
+
 
 </body>
 </html>
