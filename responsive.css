@@ -28,13 +28,10 @@
         padding:5vh;
     }
     .about-content {
-      right:8%;
+      right:10%;
       bottom:14%;
   }
-  .socials {
-    left:1%;
-    bottom:10%;
-}
+
   .portfolio-content {
     left: 60%;
     transform: translate(-50%, -50%);
