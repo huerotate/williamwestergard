@@ -18,7 +18,7 @@
 <div id="overlay-1"></div>
 <div id="overlay-2"></div>
 
-<div class="content">
+<div id="content">
 
     <div class="rectangle"> soul 1_ref </div>
     <div class="logo"> Denim </div>
@@ -144,16 +144,18 @@
 
 
 
+<script src="script.js"></script>
+
+
 <script>
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("content").style.visibility = "none";
+        document.getElementById("content").style.visibility = "none";
     } else {
-        document.querySelector("content").style.visibility = "block";
+        document.getElementById("content").style.visibility = "block";
     }
 };
 </script>
-
 
 </body>
 </html>
