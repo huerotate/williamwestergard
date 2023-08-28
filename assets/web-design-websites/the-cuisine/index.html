@@ -86,16 +86,12 @@
 
 
 
-<script src="scripts/script.js"></script>
-<script>
-document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-    } else {
-        document.querySelector("body").style.visibility = "visible";
-    }
-};
-</script>
-    
+    <script>
+        function start(){
+        TweenLite.from(document.getElementsByClassName("menu"), 1, {css:{autoAlpha:0}}); 
+        }
+        window.onload = start;
+           </script> 
+
 </body>
 </html>
