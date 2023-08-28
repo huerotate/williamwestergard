@@ -156,6 +156,12 @@ document.onreadystatechange = function() {
     }
 };
 </script>
+<script>
+    function start(){
+    TweenLite.from(document.getElementById("content"), 1, {css:{autoAlpha:0}}); 
+    }
+    window.onload = start;
+       </script> 
 
 </body>
 </html>

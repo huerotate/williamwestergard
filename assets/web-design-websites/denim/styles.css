@@ -38,6 +38,10 @@ html, body {
 }
 
 
+#content {
+  visibility:hidden;
+}
+
 .rectangle {
   border:1px solid black;
   border-radius: 40px;
