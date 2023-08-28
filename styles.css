@@ -61,7 +61,7 @@ body {
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
-    width: 75%; 
+    width: 75vw; 
     height:92vh;
     border:1px solid #383836;
   }
