@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nt-fabulous');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  body {
+	overflow:hidden;
+	background-color: black;
+  }
+  
+
+#overlay {
+z-index:1000;
+background-color: rgb(77, 77, 77);
+height:120%;
+width:120%;
+position: absolute;
+top: 50%;
+left: 50%;
+filter: brightness(120%);
+transform: translate(-50%, -50%);
+pointer-events: none;
+opacity:3%;
+}
+
+
+  .nav {
+  position:fixed;
+  width:100%;
+  height:100px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 4em;
+  z-index:999;
+  font-size:1.4vh;
+  letter-spacing: 0.4rem;
+  
+  }
+  
+  a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:rgb(192, 192, 192);
+  padding:0 2em;
+  font-family: 'NT Fabulous', sans-serif;
+  font-weight:500;
+  font-size:0.9em;
+  transition: 0.6s;
+}
+
+.services {
+	animation: moveUpServices 3s forwards;
+}
+	@keyframes moveUpServices {
+		0% {opacity:0;}
+		40% {opacity:0;}
+		100% {opacity:1;}
+	}
+.rooms {
+	animation: moveUpRooms 3.3s forwards;
+}
+	@keyframes moveUpRooms {
+		0% {opacity:0;}
+		40% {opacity:0;}
+		100% {opacity:1;}
+	}
+.booking {
+	animation: moveUpBooking 3.6s forwards;
+}
+	@keyframes moveUpBooking {
+		0% {opacity:0;}
+		40% {opacity:0;}
+		100% {opacity:1;}
+	}
+.contact {
+	animation: moveUpContact 3.9s forwards;
+	}
+	@keyframes moveUpContact {
+		0% {opacity:0;}
+		40% {opacity:0;}
+		100% {opacity:1;}
+	}
+
+  a:hover {
+	transition: 0.5s;
+	color: rgb(113, 113, 113);
+	text-shadow: 0vh 0vh 4vh rgba(184, 184, 184, 0.422);
+  }
+
+
+  
+  .logo {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+	clip-path: polygon(0 1%, 100% 5%, 100% 100%, 0% 100%);
+	position: fixed;
+	top:0;
+	letter-spacing: 0.3vh;
+	left:46.9%;
+	transform: translateX(-50%);
+	font-family: 'NT Fabulous', sans-serif;
+	font-size:4.2vh;
+	font-weight:500;
+	color:rgb(192, 192, 192);
+	padding:0.9em;
+	z-index:999;
+	animation-timing-function: ease-out;
+	animation-delay:5s;
+	animation: moveUp 3.2s forwards;
+}
+
+@keyframes moveUp {
+0% {opacity:0;}
+40% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+ #logo-size {
+	transform: scale(1, 1.5);
+	/* Safari and Chrome */
+	-webkit-transform: scale(1, 1.5);
+	/* Firefox */
+	-moz-transform: scale(1, 1.5);
+	/* IE 9+ */
+	-ms-transform: scale(1, 1.5);
+	/* Opera */
+	-o-transform: scale(1, 1.5);
+}
+
+  .container {
+	width:100%;
+	height:100vh;
+	background-color: rgb(0, 0, 0);
+  }
+  
+ 
+#rgbKineticSlider {
+  min-width: 87%; 
+  min-height: 87%; 
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation:fadeInImg 6s forwards;
+}
+@keyframes fadeInImg {
+0% {opacity:0%; filter:brightness(30%);}
+100% {opacity:100%; filter:brightness(100%);}
+}
+
+
+#ov {    /* button */
+	clip-path: inset(0 1em 0 0);
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color:rgba(0, 0, 0, 0);
+	font-family: 'NT Fabulous', sans-serif;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-size: 1.8vh;
+	cursor: pointer;
+	text-align: center;
+	transition: 0.6s;
+	z-index:999;
+	padding-bottom: 0.3vh;
+	border:none;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	animation-timing-function: ease-out;
+	animation:fadeIn 3.5s forwards;
+  }
+  @keyframes fadeIn {
+0% {opacity:0%;}
+30% {opacity:0%; clip-path: inset(0 0em 0 0);}
+100% {opacity:50%; letter-spacing:1.7vh; clip-path: inset(0 1em 0 0);};
+  }
+
+  #ov:hover {
+	transition: 0.5s;
+	color: rgb(113, 113, 113);
+	text-shadow: 0vh 0vh 4vh rgba(184, 184, 184, 0.422);
+	border-bottom: 1px solid rgb(96, 96, 96);  
+}
+
+		#myVideo {
+			z-index:0;
+			display:none;
+		  /* Make video to at least 100% wide and tall */
+		  min-width: 100%; 
+		  min-height: 100%; 
+		  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+		  width: auto;
+		  height: auto;
+		  /* Center the video */
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%,-50%);
+		  }
+
+
+		  #title-main {
+			font-family: 'NT Fabulous', sans-serif;
+			font-weight:100;
+			font-size:3.5vh;
+			z-index:1000;
+			color:rgb(179, 174, 174);
+			position:absolute;
+			top:20%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			animation:fadeIn3 4.5s forwards;
+		}
+		@keyframes fadeIn3 {
+	  0% {opacity:0%;}
+	  100% {opacity:100%};
+		}

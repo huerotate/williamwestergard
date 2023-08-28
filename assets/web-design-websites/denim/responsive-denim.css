@@ -1,0 +1,122 @@
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 800px) {
+    .main-content-image {
+        width:100%;
+        margin-left:0%;
+      }
+      .denim-h1 {
+        text-align:center;
+        font-family: "CosiTimes";
+        font-weight:100;
+        font-size:17vw;
+        line-height: 20vh;
+        margin-left:-1vw;
+        margin-top:15%;
+      }
+      .page-2 {
+        top:160%;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+      h2 {
+        z-index:1000;
+        position:absolute;
+        text-align:left;
+        font-family: "CosiTimes";
+      }
+      .main-content-image-2 {
+        width:50%;
+        float:right;
+        margin-top:2.5%;
+        z-index:-5;
+      }
+      .page-3 {
+        top:210%;
+        height:80vh;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+      .button {
+        top:52%;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+  }
+
+
+
+  /* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 700px) {
+    #overlay-1 {
+        height:51vh;
+      }
+      #overlay-2 {
+        height:87vh;
+      }
+      .page-2 {
+        top:147%;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+      h2 {
+        font-size:9vh;
+        z-index:1000;
+        position:absolute;
+        text-align:left;
+        font-family: "CosiTimes";
+      }
+      .main-content-image-2 {
+        width:80%;
+        float:right;
+        margin-top:2.5%;
+        z-index:-5;
+      }
+      .nav {
+        z-index:1000;
+        margin-top:3vh;
+        position:absolute;
+        right:15%;
+        display:flex;
+        gap:2em;
+      }
+      .rectangle {
+display:none;
+      }
+      #arrow {
+        width:22vh;
+        left:15%;
+        bottom:10%;
+      }
+      #content-2-image {
+        display:none;
+        z-index:999;
+        opacity:1;
+        width:70%;
+        position:absolute;
+        margin-left:20%;
+        margin-top:5%;
+        }
+        h4 {
+            font-size:4.5rem;
+          }
+      #about-page {
+        margin-left:13%;
+        bottom:55%;
+      }
+      span {
+        color:rgb(228, 224, 224);
+        font-weight:100;
+        font-size:1rem;
+        width:100%;
+        margin-top:5vh;
+        line-height: 4vh;
+        letter-spacing: .2vh;
+        font-family:arial;
+        position:absolute;
+      }
+      
+      
+      
+
+
+}

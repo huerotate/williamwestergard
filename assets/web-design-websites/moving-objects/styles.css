@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Ageya;
+    src: url("assets/fonts/Ageya-Regular.otf") format("opentype");
+}
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow:hidden;
+}
+
+body {
+    background-size: cover;
+    background-color: #000000;
+    width:100%;
+    height:100vh;
+    font-family: "Arial";
+}
+
+.scanlines {
+    z-index: 1000;
+    pointer-events: none;
+    width: 100%; 
+    height:100vh;
+    position:fixed;
+    opacity:0.2;
+}
+  
+
+.logo {
+    font-family: "Futura";
+    position: fixed;
+    color:#ffffff;
+    margin-left:1.5vh;
+    top:0;
+    text-align: center;
+    width: 100%;
+    padding:4vh;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+}
+
+
+    #container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  .slow{
+    z-index:100;
+    height:100vh;
+    margin-bottom:-38%;
+    margin-left:-22%;
+  }
+
+  .slide{
+    height:50%;
+    display: block;
+    position: absolute;
+    font-family: Ageya;
+    font-weight:400;
+    color:#ffffff;
+    font-size: 25vh;
+    text-transform: uppercase;
+    margin-bottom:-5%;
+    margin-left:0%;
+    letter-spacing: 1.2vh;
+    filter:drop-shadow(0vh 0vh 1vh rgba(255, 255, 255, 0.648))
+    drop-shadow(0vh 0vh 3vh rgba(125, 238, 255, 0.648))
+    ;
+  }
+
+.web {
+    height:50vh;
+    width:100%;
+    margin-bottom:-5%;
+    margin-left:2%;
+    text-transform: uppercase;
+}
+
+  .main-image {
+    margin-right:10%;
+    border-radius:0%;
+    filter: 
+    saturate(100%)
+    brightness(65%)
+    drop-shadow(0vh 0vh 1vh rgb(34, 41, 44))
+    drop-shadow(0vh 0vh 2vh rgb(35, 42, 45))
+    ;
+  }
+
+
+.navbar {
+    line-height: 4.5vh;
+    z-index: 1;
+    position:absolute;
+    margin-left:5%;
+    margin-top:2%;
+    font-family: 'Archivo', sans-serif;
+    font-size:  1.7vh; 
+    letter-spacing: 2vh;
+    font-weight: 100;
+    line-height:6vh;
+    text-transform: uppercase;
+    filter:drop-shadow(0vh 0vh 2vh rgb(255, 255, 255));
+}
+
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+
+.footer {
+    position: fixed;
+   bottom: 5%;
+   right:0;
+   padding:5%;
+}
+
+
+@media only screen and (min-width:200px) and (max-width: 1400px) {
+
+
+
+  #container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: none;
+    align-items:none;
+  }
+  
+
+
+  .slide{
+    height:100%;
+    display: block;
+    position: absolute;
+    top:45%;
+    left:15%;
+    transform:translate(-50%, -50%);
+    font-family: Ageya;
+    font-weight:400;
+    color:#ffffff;
+    font-size: 12vh;
+    text-transform: uppercase;
+    letter-spacing: 1.2vh;
+    filter:drop-shadow(0vh 0vh 1vh rgba(255, 255, 255, 0.648))
+    drop-shadow(0vh 0vh 3vh rgba(125, 238, 255, 0.648))
+    ;
+  }
+
+
+
+}
