@@ -3,7 +3,7 @@
 
   #main-border {
     left: 61%;
-    height:90vh;
+    height:88vh;
         }
         #myVideo {
           top: 50%;
@@ -27,6 +27,16 @@
         left: 0;
         padding:5vh;
     }
+    .about-content {
+      right:7%;
+      bottom:15%;
+  }
+  .portfolio-content {
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
     
     }  
 
