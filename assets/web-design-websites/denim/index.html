@@ -144,14 +144,12 @@
 
 
 
-<script src="script.js"></script>
-
 <script>
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("content").style.visibility = "hidden";
     } else {
-        document.querySelector("body").style.visibility = "visible";
+        document.querySelector("content").style.visibility = "visible";
     }
 };
 </script>
