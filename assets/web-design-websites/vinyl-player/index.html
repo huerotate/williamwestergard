@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Player </title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="playerstyle.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+    <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    
+
+
+
+      <img id='vinylplayer' src="img/vinyl loop.gif" alt="vinyl">
+
+
+
+      <div id="music-player">
+        <div id='title-two' alt="title-two">
+        <a href="https://purrplecat.com/"target="_blank">
+        <h1>Purrple Cat</h1>
+       </a>
+        <div class="info">
+          <div class="center">
+            <div class="jp-playlist">
+              <ul>
+                <li></li>
+              </ul>
+            </div> 
+          </div>
+          
+          <div class="progress"></div>
+          
+        </div>
+            
+        <div class="controls">
+          <div class="current jp-current-time">00:00</div>
+      
+          
+          <div class="play-controls">
+            <a href="javascript:;" class="icon-previous jp-previous" title="previous">
+              <svg id="icon-previous">
+                <polygon points="0,11.8 13.5,0 13.5,10.7 24.5,0 24.5,23.6 13.5,12.9 13.5,23.6 "/>
+              </svg>
+            </a>
+      
+            <a href="javascript:;" class="icon-play jp-play" title="play">
+              <svg id="icon-play">
+                <g id="icon-play">
+                  <path d="M0,30.9L0,0l24.5,15.4L0,30.9z"/>
+                </g>
+              </svg>
+            </a>
+      
+            <a href="javascript:;" class="icon-pause jp-pause" title="pause">
+              <svg id="icon-pause">
+              <g id="icon-pause">
+                <rect x="0" y="0" width="8.2" height="30.9"/>
+                <rect x="16.2" y="0" width="8.2" height="30.9"/>
+              </g>
+            </svg>
+            </a>
+      
+            <a href="javascript:;" class="icon-next jp-next" title="next">
+              <svg id="icon-next">
+                <polygon points="25,11.8 11.5,0 11.5,10.7 0.5,0 0.5,23.6 11.5,12.9 11.5,23.6 "/>
+              </svg>
+            </a>
+          </div>
+      
+      
+        
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
+        
+      </div>
+      
+      
+      <p class="copyrights">
+        Designed by <a href='https://dribbble.com/shots/1680792-Music-Player-Widget-Free-PSD'>Vladimyr Kondriianenko</a> and coded by <a href='https://codepen.io/mustafaismail22/'>Mustafa ismail</a>
+      </p>
+      <!-- partial -->
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/jplayer/2.6.4/jquery.jplayer/jquery.jplayer.min.js'></script>
+      <script src='//cdnjs.cloudflare.com/ajax/libs/jplayer/2.6.4/add-on/jplayer.playlist.min.js'></script><script  src="./script.js"></script>
+      <script src="musicplayer.js"></script>
+
+
+
+
+</body>
+</html>

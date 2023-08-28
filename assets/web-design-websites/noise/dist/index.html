@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Who are you?</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+
+
+</head>
+<body>
+  
+  <div id="canvas">
+<canvas>
+</canvas>
+</div>
+
+
+<div id="content">
+
+
+  <h1> The <br> Noise </h1>
+
+
+  <div id="page-one">
+   <p class="typewriter">  
+     Welcome to the noise
+   </p>
+  </div>
+
+  <div id="page-two">
+  <p  class="typewriter">  
+    This page is full of noise
+  </p>
+  </div>
+
+  <div id="page-three">
+    <p  class="typewriter">  
+     Sooooo much noise
+      </p>
+  </div>
+
+  <div id="page-four">
+<p class="typewriter">  
+  It's getting noisier 
+</p>
+</div>
+
+<div id="page-five">
+<p class="typewriter">  
+  More and more noise
+</p>
+</div>
+
+
+<input id="popstate-start" type="button" onclick="myFunctionStart(); changePageTwo()" value="Next" />
+<input id="popstate-zero" type="button" onclick="myFunctionZero(); changePageThree()" value="Next" />
+<input id="popstate-one" type="button" onclick="myFunctionOne(); changePageFour()" value="Next" />
+<input id="popstate-two" type="button" onclick="myFunctionTwo(); changePageFive()" value="Next" />
+<input id="popstate-three" type="button" onclick="location.href='index-two.html';" value="Next" />
+
+  </div>
+
+  
+  <script  src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script  src="./next-button-two.js"></script>
+
+
+
+<script>
+
+
+function changePageTwo() {
+
+document.getElementById('page-one').style.display = "none";
+document.getElementById('popstate-start').style.display = "none";
+
+document.getElementById('page-two').style.display = "block";
+setTimeout(function(){document.getElementById("popstate-zero").style.display = "block";}, 4000);
+
+}
+
+
+function changePageThree() {
+
+document.getElementById('page-two').style.display = "none";
+document.getElementById('popstate-zero').style.display = "none";
+
+document.getElementById('page-three').style.display = "block";
+setTimeout(function(){document.getElementById("popstate-one").style.display = "block";}, 4000);
+
+}
+
+
+
+function changePageFour() {
+
+document.getElementById('page-three').style.display = "none";
+document.getElementById('popstate-one').style.display = "none";
+
+document.getElementById('page-four').style.display = "block";
+setTimeout(function(){document.getElementById("popstate-two").style.display = "block";}, 4000);
+
+}
+
+
+function changePageFive() {
+
+  document.getElementById('page-four').style.display = "none";
+  document.getElementById('popstate-two').style.display = "none";
+
+  document.getElementById('page-five').style.display = "block";
+  setTimeout(function(){document.getElementById("popstate-three").style.display = "block";}, 4000);
+
+}
+
+
+</script>
+
+</body>
+</html>

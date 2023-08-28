@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Go away</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  
+  <div id="canvas">
+<canvas>
+</canvas>
+</div>
+
+
+
+
+<div id="content">
+
+
+
+ <h1 class="leave"> The Noise </h1>
+
+
+  </div>
+
+
+  <script> 
+  
+  
+  
+
+  const canvas = document.querySelector("canvas");
+const ctx = canvas.getContext("2d");
+const colors = [
+"#b4b2b5",
+];
+
+let linePos = 0,
+rAF;
+
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+function texts(color) {
+  ctx.setTransform(1, -0.15, 0, 1, 0, -10);
+}
+
+function glitch() {
+  rAF = window.requestAnimationFrame(glitch);
+
+  texts(colors[Math.floor(Math.random() * 57)]);
+  ctx.shadowBlur = 0;
+  ctx.shadowColor = "none";
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+  for (let i = 0; i < 12000; i++) {
+    ctx.fillStyle = `rgba(255, 255, 255, ${Math.random() * 0.01})`;
+    ctx.fillRect(
+    Math.floor(Math.random() * innerWidth),
+    Math.floor(Math.random() * innerHeight),
+    Math.floor(Math.random() *298) + 1,
+    Math.floor(Math.random() * 284) + 1);
+
+
+
+  
+    ctx.fillStyle = `rgba(0,0,0,${Math.random() * 10.1})`;
+    ctx.fillRect(
+    Math.floor(Math.random() * innerWidth),
+    Math.floor(Math.random() * innerHeight),
+    Math.floor(Math.random() * 133) + 2,
+    Math.floor(Math.random() * 93) + 2);
+
+  }
+
+  ctx.fillStyle = colors[Math.floor(Math.random() * 40)];
+  ctx.fillRect(
+  Math.random() * innerWidth,
+  Math.random() * innerHeight,
+  Math.random() * innerWidth,
+  Math.random() * innerHeight);
+
+  ctx.setTransform(1, 0, 0, .8, .2, 0);
+
+  
+
+}
+
+
+glitch();
+
+window.addEventListener('resize', () => {
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  
+});
+
+
+
+
+
+
+  </script>
+  
+  <script type="text/javascript">
+
+
+    </script>
+
+</body>
+</html>

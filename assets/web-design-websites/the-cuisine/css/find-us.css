@@ -1,0 +1,146 @@
+html, body {
+    padding:0;
+    margin:0;
+    font-family: 'Recia', serif;
+    overflow-x:hidden;
+    background-color:black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4a4a4a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #323232;
+}
+
+
+.title {
+    top:2%;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index:2;
+    float:left;
+    position:fixed;
+    color: #f3f3f3;
+    left:2vw; 
+    padding:1vh;
+    font-size:2.5vh;
+}
+.restaurant {
+  color: #ffaa3b;
+}
+.navbar {
+  top:0;
+  padding-top:1%;
+  padding-bottom:1%;
+  z-index:1;
+  width:100%;
+  position: fixed; 
+  background-color:black;
+}
+ul {
+    font-size: 1.7vh;
+    font-weight: 500;
+    letter-spacing: .3vh;
+    display: flex;
+    justify-content:right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5vh 4vh;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+   color: #cdcdcd;
+  }
+
+  li a.active {
+    color: #ffaa3b;
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 1.2vh;
+  }
+
+  .contact-image {
+    float:right;
+    width:50%;
+    margin-top:11%;
+    margin-right:5%;
+  }
+
+  .map {
+    position:absolute;
+    z-index:1000;
+    margin-top:26%;
+    margin-left:10%;
+  }
+
+  .contact-content {
+    width:50%;
+    height:80vh;
+    margin-left:10%;
+    margin-top:9%;
+    position:relative;
+  }
+
+  .contact-title {
+    font-family: 'Erode', serif;
+    font-size:3.3rem;
+    color:#de983c;
+    position: absolute;
+  }
+
+  .contact-underline {
+    background-color: #ffaa3b;
+    height:.1vh;
+    width:17%;
+    position: absolute;
+    top:10%;
+  }
+
+.contact-desc {
+    font-family: 'Erode', serif;
+    line-height: 3.7vh;
+    font-size:1.2rem;
+    color:rgb(230, 230, 230);
+    position: absolute;
+    top:16%;
+    padding-right:40%;
+}
+
+.call {
+    line-height: 3.5vh;
+    font-size:1.5rem;
+    font-weight: 100;
+    color:white;
+    position: relative;
+}
+
+.phone {
+    line-height: 3.5vh;
+    letter-spacing: .3vh;
+    font-size:1.5rem;
+    color: #ffaa3b;
+    position: relative;
+    padding-left:1vh;
+}

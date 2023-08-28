@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1100px) {
+    body {
+        
+        background: 
+        repeating-radial-gradient(#000 0 0.0001%,#1a1a1a 0 0.0002%) 50% 0/2500px 4500px,
+        repeating-conic-gradient(#000 0 0.0001%,#1a1a1a 0 0.0002%) 50% 50%/2500px 4500px;
+    }
+  }
+
+
+
+@media only screen and (max-width: 1100px) {
+    .title {
+     width:95%;
+     top:30%;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .moon {
+     width:95%;
+     top:50%;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+      #content {
+  display:none;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    #numpad {
+      display:block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #arrow {
+   display:none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    h2 {
+      display:none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .hint {
+        font-size:2.5vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .popup {
+        font-size:2.8vh;
+        padding: 5vh;
+        width:50%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .popup h2 {
+        font-size:3vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    .popup .close {
+        font-size:7vh;
+        top: -20px;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #album-container {
+       width:95%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    #album {
+       width:95%;
+       filter:brightness(100%) drop-shadow(0px 0px 165px  #c4c4c447);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    #album-play {
+        font-size:2.5vh;
+        font-weight: 300;
+        padding:40px 90px 40px 90px;
+        border-radius: 80px 80px 80px 80px;
+        top: 83%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    #music-player{
+  width: 400px;
+  height: 390px;
+  margin: 18vh auto;
+  margin-right: 5px;
+  overflow: hidden;
+  z-index: 0;
+  position:absolute;
+right:0;
+bottom:0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+    #vinylplayer {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:1250px; 
+        position:fixed;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #logo {
+        top: 5%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #hidden-buttons, .nowplaying, .keys {
+   display:none
+  }
+}

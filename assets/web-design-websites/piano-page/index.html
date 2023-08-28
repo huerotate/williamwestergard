@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title> Old Piano </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
+<link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+
+</head>
+
+<body> 
+
+
+<div id="ovv">
+<video playsinline id="myVideo">
+  <source src="img/video6.mp4">
+  Your browser does not support HTML5 video.
+</video></div>
+
+
+<div id="content">
+
+      <div class="keyboard-container">
+        <div class="naturals-container">
+
+          <button id="key-A" onclick="playAudio('audio/C.mp3')"><p>A</p></button>
+          <button id="key-S" onclick="playAudio('audio/D.mp3')"><p>S</p></button>
+          <button id="key-D" onclick="playAudio('audio/E.mp3')"><p>D</p></button>
+          <button id="key-F" onclick="playAudio('audio/F.mp3')"><p>F</p></button>
+          <button id="key-G" onclick="playAudio('audio/G.mp3')"><p>G</p></button>
+          <button id="key-H" onclick="playAudio('audio/B.mp3')"><p>H</p></button>
+          <button id="key-J" onclick="playAudio('audio/C_octave.mp3')"><p>J</p></button>
+        </div>
+
+        <div class="accidentals-container">
+          <button id="key-W" class="C" onclick="playAudio('audio/D-.mp3')">W</button>
+          <button id="key-E" class="D" onclick="playAudio('audio/E-.mp3')">E</button>
+          <button id="key-T" class="F" onclick="playAudio('audio/G-.mp3')">T</button>
+          <button id="key-Y" class="G" onclick="playAudio('audio/B-.mp3')">Y</button>
+          <button id="key-U" class="A" onclick="playAudio('audio/C-.mp3')">U</button>
+        </div>
+      </div>
+    </div>
+
+
+      <audio id="song" src="audio/song/song22.mp3" preload="auto"></audio>
+
+
+<div id="background">
+  <h1> Old Piano </h1>
+<img class='moon' src="img/moon4.png">
+  
+
+     <i> <h2> - use your keyboard to play the notes - </h2> </i> 
+   
+</div>
+
+
+
+      </div>
+      
+      
+
+
+      
+      
+
+
+
+
+<div id="hidden-buttons">
+  <button id='btnA' onclick="triggerA()"><p>A</p></button>
+  <button id='btnS' onclick="triggerS()"><p>S</p></button>
+  <button id='btnW' onclick="triggerW()"><p>W</p></button>
+  <button id='btnE' onclick="triggerE()"><p>E</p></button>
+  <button id='btnF' onclick="triggerF()"><p>F</p></button>
+  <button id='btnT' onclick="triggerT()"><p>T</p></button>
+  <button id='btnG' onclick="triggerG()"><p>G</p></button>
+  <button id='btnH' onclick="triggerH()"><p>H</p></button>
+
+      <button id='btnD' onclick="triggerD()"><p>D</p></button>
+      <button id='btnY' onclick="triggerY()"><p>Y</p></button>
+      <button id='btnJ' onclick="triggerJ()"><p>J</p></button>
+      <button id='btnU' onclick="triggerU()"><p>U</p></button>
+    </div>
+
+
+
+        <div class="nowplaying"></div>
+        <div class="keys">
+          <div data-key="65" class="key" data-note="C">
+          </div>
+          <div data-key="87" class="key sharp" data-note="C#">  
+          </div>
+          <div data-key="83" class="key" data-note="D">
+          </div>
+          <div data-key="69" class="key sharp" data-note="D#">
+          </div>
+          <div data-key="68" class="key" data-note="E">
+          </div>
+          <div data-key="70" class="key" data-note="F">
+          </div>
+          <div data-key="84" class="key sharp" data-note="F#">
+          </div>
+          <div data-key="71" class="key" data-note="G">
+          </div>
+          <div data-key="89" class="key sharp" data-note="G#">
+          </div>
+          <div data-key="72" class="key" data-note="A">
+          </div>
+          <div data-key="85" class="key sharp" data-note="A#">
+          </div>
+          <div data-key="74" class="key" data-note="B">
+          </div>
+          </div>
+        </div>
+  
+        <audio data-key="65" src="audio/C.mp3"></audio>
+        <audio data-key="87" src="audio/D-.mp3"></audio>
+        <audio data-key="83" src="audio/D.mp3"></audio>
+        <audio data-key="69" src="audio/E-.mp3"></audio>
+        <audio data-key="68" src="audio/E.mp3"></audio>
+        <audio data-key="70" src="audio/F.mp3"></audio>
+        <audio data-key="84" src="audio/G-.mp3"></audio>
+        <audio data-key="71" src="audio/G.mp3"></audio>
+        <audio data-key="89" src="audio/B-.mp3"></audio>
+        <audio data-key="72" src="audio/B.mp3"></audio>
+        <audio data-key="85" src="audio/C-.mp3"></audio>
+        <audio data-key="74" src="audio/C_octave.mp3"></audio>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div id="numpad">
+      <button id="buttonTwo" class="seven" onclick="play()"> A</button>
+      <button id="buttonTwo" class="eight" onclick="play()">W</button>
+      <button id="buttonTwo" class="nine" onclick="play()">S</button>
+      <br/>
+      
+      <button id="buttonTwo" class="four" onclick="play()">E</button>
+      <button id="buttonTwo" class="five" onclick="play()">D</button>
+      <button id="buttonTwo" class="six" onclick="play()">F</button>
+      <br/>
+      <button id="buttonTwo" class="one" onclick="play()">Y</button>
+      <button id="buttonTwo" class="two" onclick="play()">U</button>
+      <button id="buttonTwo" class="three" onclick="play()">J</button>
+  
+    </div>
+    
+    
+    <audio id="audio" src="audio/click.mp3"></audio>
+
+
+
+      <script type="text/javascript" src="pianoFocus.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <script type="text/javascript" src="hide.js"></script>
+      <script type="text/javascript" src="piano.js"></script>
+
+      <script type="text/javascript" src="musicplayer.js"></script>
+
+      
+
+      <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
+    
+
+  
+
+</body>
+
+
+</html>

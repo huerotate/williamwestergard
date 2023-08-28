@@ -1,0 +1,257 @@
+html, body {
+    padding:0;
+    margin:0;
+    font-family: 'Recia', serif;
+    overflow-x:hidden;
+    background-color:rgb(0, 0, 0);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4a4a4a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #323232;
+}
+
+
+.title {
+    top:2%;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index:2;
+    float:left;
+    position:fixed;
+    color: #f3f3f3;
+    left:2vw; 
+    padding:1vh;
+    font-size:2.5vh;
+}
+.restaurant {
+  color: #ffaa3b;
+}
+.navbar {
+    top:0;
+    padding-top:1%;
+    padding-bottom:1%;
+    z-index:1;
+    width:100%;
+    position: fixed; 
+    background-color:black;
+}
+ul {
+    font-size: 1.7vh;
+    font-weight: 500;
+    letter-spacing: .3vh;
+    display: flex;
+    justify-content:right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5vh 4vh;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+   color: #cdcdcd;
+  }
+
+  li a.active {
+    color: #ffaa3b;
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 1.2vh;
+  }
+
+
+  .menu-wrapper {
+   display:flex;
+    width:45%;
+    height:100vh;
+    position:absolute;
+    top:65%;
+    left:75%;
+    transform:translate(-50%, -50%);
+  }
+
+  .menu-title {
+    color: #ffaa3b;
+    letter-spacing:1vh;
+    font-size:2.5rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+  .menu-navbar {
+    z-index:1000;
+    font-size:1rem;
+    text-transform: uppercase;
+    position:fixed;
+    left:7%;
+    top:40%;
+    display:inline-block;
+    text-align:left;
+    border-right:1px solid white;
+ 
+  }
+
+  .starters-image {
+    width:60%;
+    position:absolute;
+    top:39%;
+    left:-6%;
+    transform:translate(-90%, -50%);
+  }
+
+  .starters-title {
+    color: #ffaa3b;
+    letter-spacing:.5vh;
+    font-size:2rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:18%;
+    left:26%;
+    transform:translate(-50%, -50%);
+  }
+
+  .starters-underline {
+    background-color:white;
+    width:70%;
+    height:.1vh;
+    position:absolute;
+    top:23%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .item-one {
+    letter-spacing: .3vh;
+    display:block;
+    color:white;
+    font-size:1.4rem;
+    font-weight:600;
+    text-transform: uppercase;
+  }
+
+  .item-one-desc {
+    display:block;
+    color:rgb(215, 215, 215);
+    font-size:1rem;
+    width:70%;
+    padding-top:.5vh;
+  }
+  .item-one-price {
+    color:white;
+    font-size:1.4rem;
+    font-weight:400;
+    width:70%;
+    height:.2vh;
+    position:absolute;
+    top:34%;
+    left:130%;
+    transform:translate(-50%, -50%);
+  }
+
+  .item-one-wrapper {
+    display:block;
+    width:70%;
+    height:.2vh;
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .item-two-wrapper {
+    display:block;
+    width:70%;
+    height:.2vh;
+    position:absolute;
+    top:42%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .item-three-wrapper {
+    display:block;
+    width:70%;
+    height:.2vh;
+    position:absolute;
+    top:54%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .item-four-wrapper {
+    display:block;
+    width:70%;
+    height:.2vh;
+    position:absolute;
+    top:66%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  .dessert-title {
+    color: #ffaa3b;
+    letter-spacing:.5vh;
+    font-size:2rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:18%;
+    left:25%;
+    transform:translate(-50%, -50%);
+  }
+
+  .vegan-title {
+    color: #ffaa3b;
+    letter-spacing:.5vh;
+    font-size:2rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:18%;
+    left:22.5%;
+    transform:translate(-50%, -50%);
+  }
+
+  .steak-title {
+    color: #ffaa3b;
+    letter-spacing:.5vh;
+    font-size:2rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:18%;
+    left:22.5%;
+    transform:translate(-50%, -50%);
+  }
+
+  .fish-title {
+    color: #ffaa3b;
+    letter-spacing:.5vh;
+    font-size:2rem;
+    text-transform: uppercase;
+    position:absolute;
+    top:18%;
+    left:20%;
+    transform:translate(-50%, -50%);
+  }
