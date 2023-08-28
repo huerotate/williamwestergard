@@ -2,9 +2,25 @@
 @media only screen and (min-width:1200px) and (max-width: 1800px) {
 
   #main-border {
-    left: 60.5%;
-    height:88vh;
+    left: 62%;
         }
+        .logo-wrapper {
+          position: absolute;
+          top: 45.5%;
+          left: 51.2%;
+          transform: translate(-50%, -50%);
+      }
+      .navbar{
+        background: #0b0a0a;
+        position: fixed;
+        height: 100%;
+        width: 41vh;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        padding:5vh;
+    }
+    
     }  
 
 
