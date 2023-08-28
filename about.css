@@ -1,0 +1,49 @@
+.about-content {
+    color:#b2b6a6;
+    width:23vh;
+    position:absolute;
+    right:6%;
+    bottom:10%;
+}
+
+.about-h1 {
+    color:#b2b6a6;
+    font-size:4vh;
+    font-family: 'Satoshi', sans-serif;    
+    font-weight: 600;
+    line-height: 11vh;
+}
+
+.about-content p {
+    color:#b2b6a6;
+    font-size:2.4vh;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+.socials {
+    color:#95998b;
+    width:27vh;
+    position:absolute;
+    left:27%;
+    bottom:10%;
+    line-height: 4.5vh;
+    font-size:2.3vh;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+}
+
+.twitter {
+    font-size:2.6vh;
+    font-weight: 500;
+}
+.instagram {
+    font-size:2.6vh;
+    font-weight: 500;
+    padding-bottom:5vh;
+}
+
+.twitter a:hover, .instagram a:hover {
+    color:rgb(67, 67, 67);
+    transition:0.3s;
+}
