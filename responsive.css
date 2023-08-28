@@ -29,13 +29,16 @@
     }
     .about-content {
       right:8%;
-      bottom:7%;
+      bottom:14%;
   }
+  .socials {
+    left:1%;
+    bottom:10%;
+}
   .portfolio-content {
     left: 60%;
     transform: translate(-50%, -50%);
   }
-  
   
     
     }  
