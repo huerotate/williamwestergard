@@ -56,10 +56,13 @@
 #myVideo {
  display:none;
       }
-    
+      
 #main-border {
 display:none;
       }
+      #main-border-2 {
+        display:none;
+              }
     
     .logo-over {
         font-family: 'Satoshi', sans-serif;
@@ -342,6 +345,7 @@ display:none;
   }
   .graphic-design-content {
       overflow:hidden;
+      margin-top:10%;
   }
   
   .gallery-1 {
@@ -518,6 +522,7 @@ display:none;
   transform: translate(-50%, -50%);
   width:300px; 
   height:300px;
+  padding-bottom:15vh;
 }
 
 
@@ -584,16 +589,20 @@ position: absolute;
   transform: translate(-50%, -50%);
   width:300px; 
   height:300px;
+  
 }
 
 .logo-image-4 img {
 position: absolute;
-top: 50%;
+top: 380%;
 left: 50%;
 transform: translate(-50%, -50%);
 width:300px; 
 height:300px;
 object-fit: contain;
+padding-bottom:15vh;
+
+
 }
 
 .logo-image-5 {
@@ -671,7 +680,7 @@ height:300px;
 
 .photo-edit-image-4 {
 position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:300px; 
@@ -697,14 +706,18 @@ margin-left:15%;
 
 .photo-edit-image-5 img {
 position: absolute;
-top: 100%;
+top: 85%;
 left: 50%;
 transform: translate(-50%, -50%);
 width:300px; 
 height:300px;
 object-fit: contain;
-
+padding-bottom:15vh;
 }
+
+
+
+
 
 .poster-image-2 {
   width:100%;
@@ -721,6 +734,9 @@ object-fit: contain;
   width:300px; 
   height:300px;
   object-fit: contain;
+}
+.poster-image-3 {
+  padding-bottom:15vh;
 }
 
 
@@ -817,6 +833,7 @@ object-fit: contain;
     width:300px; 
     height:300px;
     object-fit: contain;
+   
     
   }
   
@@ -835,6 +852,7 @@ object-fit: contain;
     transform: translate(-50%, -50%);
     width:300px; 
     height:300px;
+    padding-bottom:15vh;
   }
   
 
