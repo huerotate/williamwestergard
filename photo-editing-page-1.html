@@ -112,19 +112,19 @@
      document.getElementsByClassName("next-button").style.top="100%";	
     }
     </script>
-<script>
-    if (window.screen.width < 1500) {
-        document.write( 
-            '<script type="text/javascript" src="portfolio.js"><\/script>'
-        )
-      }
-      
-      if (window.screen.width > 1500) {
-        document.write( 
-          '<script type="text/javascript" src="scripts/advertising.js"><\/script>' +
-            '<script type="text/javascript" src="portfolio.js"><\/script>'
-        )
-      }
-</script>
+    <script>
+        if (window.screen.width < 1200) {
+            document.write( 
+                '<script type="text/javascript" src="portfolio.js"><\/script>'
+            )
+          }
+          
+          if (window.screen.width > 1200) {
+            document.write( 
+              '<script type="text/javascript" src="scripts/advertising.js"><\/script>' +
+                '<script type="text/javascript" src="portfolio.js"><\/script>'
+            )
+          }
+    </script>
 </body>
 </html>
