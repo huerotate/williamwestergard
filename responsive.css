@@ -594,7 +594,7 @@ position: absolute;
 
 .logo-image-4 img {
 position: absolute;
-top: 380%;
+top: 430%;
 left: 50%;
 transform: translate(-50%, -50%);
 width:300px; 
@@ -842,6 +842,7 @@ padding-bottom:15vh;
     height:0 auto;
     padding-right:0vh;
     margin-left:15%;
+    padding-bottom:15vh;
   }
   
   .digital-art-image-7 img {
@@ -852,7 +853,6 @@ padding-bottom:15vh;
     transform: translate(-50%, -50%);
     width:300px; 
     height:300px;
-    padding-bottom:15vh;
   }
   
 
