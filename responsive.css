@@ -594,13 +594,13 @@ position: absolute;
 
 .logo-image-4 img {
 position: absolute;
-top: 430%;
+top: 450%;
 left: 50%;
 transform: translate(-50%, -50%);
 width:300px; 
 height:300px;
 object-fit: contain;
-padding-bottom:15vh;
+padding-bottom:10vh;
 
 
 }
