@@ -107,7 +107,15 @@
 
 <script src="scripts/advertising.js"></script>
 <script src="portfolio.js"></script>
-
+	
+<script>
+    //Safari
+    var SAFARI = /Safari/i.test(navigator.userAgent);
+    if (SAFARI) {
+     document.getElementsByClassName("next-button").style.top="100%";	
+    }
+    </script>
+    
 
 </body>
 </html>
