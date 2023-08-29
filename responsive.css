@@ -39,7 +39,7 @@
   .next-button {
     width:100vw;
     position: relative;
-    top: 50%;
+    top: 30%;
     left: 55%;
     transform: translate(-50%, -50%);
 }
