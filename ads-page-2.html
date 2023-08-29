@@ -95,7 +95,15 @@
     </div>
 </div>
 
-
+	
+<script>
+    //Safari
+    var SAFARI = /Safari/i.test(navigator.userAgent);
+    if (SAFARI) {
+     document.getElementsByClassName("next-button").style.top="100%";	
+    }
+    </script>
+    
 <script src="scripts/advertising.js"></script>
 </body>
 </html>

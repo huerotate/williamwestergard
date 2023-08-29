@@ -149,19 +149,18 @@ svg {
   }
 
 
-
   .next-button {
     width:100vw;
-    height:100vh;
+    height:100%;
+    position:relative;
+    top: 50%;
+    left: -52%;
+    transform: translate(-50%, -50%);
 }
 
 
 .next {
     z-index:1000;
-    position: relative;
-    top: 50%;
-    left: -55%;
-    transform: translate(-50%, -50%);
     font-family: 'Satoshi', sans-serif;
     font-size:5.5vh;
     color:#b2b6a6;
