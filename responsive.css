@@ -356,7 +356,6 @@ display:none;
       font-size:2.5vh;
       letter-spacing: 0.2vh;
       margin-left:0vw;
-  
   }
 
   .gallery-1 p {
@@ -364,12 +363,25 @@ display:none;
   }
   
     div.gallery img {
-      border-left:1px solid#b2b6a6;
-      padding:0.1vh;
-      float:left;
+      border-left:none;
       max-width: 10vh;
     }
   
+    .row-3 {
+      top:-50%;
+      position:relative;
+    }
+
+    .row-5 {
+      top:-40%;
+      position:relative;
+    }
+    .row-5 h3 {
+      margin-top:115%;
+      position:absolute;
+    }
+
+    
     #last-image{
      display:none;
     }
