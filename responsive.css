@@ -653,7 +653,7 @@ height:300px;
 
 .photo-edit-image-2 img {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:300px; 
@@ -670,7 +670,7 @@ height:300px;
 
 .photo-edit-image-3 img {
   position: absolute;
-  top: 150%;
+  top: 120%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:300px; 
