@@ -442,6 +442,21 @@ display:none;
     height:300px;
   }
 
+  .next-button {
+    width:100vw;
+    height:100%;
+}
+
+.next {
+    z-index:1000;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: 'Satoshi', sans-serif;
+    font-size:5vh;
+    color:#b2b6a6;
+  }
 
   .row-1 {
     width:100%;
