@@ -38,8 +38,9 @@
   }
   .next-button {
     width:100vw;
+    height:100%;
     position: relative;
-    top: 55%;
+    top: 100%;
     left: 55%;
     transform: translate(-50%, -50%);
 }
