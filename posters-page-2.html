@@ -14,6 +14,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
+
 
 <script>
     // this function must be defined in the global scope
@@ -21,8 +23,6 @@
         $(obj).fadeIn(1000);
     }
     </script>
-
-<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,100,700,400,300,200,900&f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
 
 
 </head>
@@ -104,8 +104,26 @@
     </div>
 </div>
 
-
-<script src="scripts/advertising.js"></script>
-<script src="portfolio.js"></script>
+<script>
+    //Safari
+    var SAFARI = /Safari/i.test(navigator.userAgent);
+    if (SAFARI) {
+     document.getElementsByClassName("next-button").style.top="100%";	
+    }
+    </script>
+<script>
+    if (window.screen.width < 1500) {
+        document.write( 
+            '<script type="text/javascript" src="portfolio.js"><\/script>'
+        )
+      }
+      
+      if (window.screen.width > 1500) {
+        document.write( 
+          '<script type="text/javascript" src="scripts/advertising.js"><\/script>' +
+            '<script type="text/javascript" src="portfolio.js"><\/script>'
+        )
+      }
+</script>
 </body>
 </html>
