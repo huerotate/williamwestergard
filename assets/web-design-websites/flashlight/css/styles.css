@@ -1,0 +1,145 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:arial;
+}
+body {
+  background-color: #080808;
+  height:100%;
+  width:100%;
+  cursor: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1f1f1f; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b3b3b; 
+  }
+
+
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+  .cursor-dot {
+    width: 14px;
+    height: 14px;
+    left: -3px;
+    top: -3px;
+    border-radius: 100%;
+    z-index: 11000;
+    background: rgba(128, 128, 128, 0.037);
+    border:1px solid rgba(255, 255, 255, 0.539);
+  }
+
+
+
+#flashlight-button {
+  background: none;
+  border:1px solid white;
+  color:white;
+  font-size: 1.5vh;
+  letter-spacing: 2vh;
+  text-transform: uppercase;
+  z-index:10000;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  padding:2.5vh 1vh 2.5vh 2.5vh;
+  transition:0.1s;
+}
+#flashlight-button:hover {
+  cursor:none;
+  background: rgb(15, 15, 15);
+  transition:0.1s;
+  border:1px solid white;
+  color:rgb(255, 255, 255);
+}
+
+#overlay {
+  position:fixed;
+  background-color:#080808;
+  height:100%;
+  width:100%;
+  z-index:9999;
+}
+
+#container {
+  pointer-events: none;
+  display:none;
+    animation:fadeInSection 4s forwards;
+}
+@keyframes fadeInSection {
+    0% {opacity:0%;}
+    55% {opacity:0%;}
+    100% {opacity:100%;}
+}
+
+
+section {
+    position:relative;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size:15em;
+    cursor:default; 
+    color:white;
+}
+#bg-image {
+  height:0 auto;
+  width:85%;
+  position:fixed;
+  top:50%;
+  left:20%;
+  transform:translate(-50%, -50%);
+  filter:brightness(10%);
+  mix-blend-mode:difference;
+  z-index: 0;
+}
+#bg-image-2 {
+  height:0 auto;
+  width:85%;
+  position:fixed;
+  top:50%;
+  left:80%;
+  transform:translate(-50%, -50%);
+  filter:brightness(10%);
+  mix-blend-mode:difference;
+  z-index: 0;
+}
+
+
+  #light {
+  display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.998) 20%);
+    animation:fadeInLight 3s forwards;
+}
+@keyframes fadeInLight {
+    0% {opacity:0%;}
+    100% {opacity:100%;}
+}
