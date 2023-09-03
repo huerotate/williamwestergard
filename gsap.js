@@ -17,7 +17,7 @@ gsap.from(".logo-under", 2.5, {
     delay:-0.9,
 });
 
-gsap.from("#myVideo", 3, {
+gsap.from("canvas", 3, {
     opacity:0,
     ease: "power3.inOut",
 });

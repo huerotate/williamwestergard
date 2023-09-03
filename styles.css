@@ -37,22 +37,38 @@ body {
     height:100vh;
 }
 
-#myVideo {
-    z-index: -1;
+
+.canvas-border{
+    border:1px solid #181816;
     position: absolute;
     top: 50%;
     left: 60%;
-    width:70%;
     transform: translate(-50%, -50%);
-    border:1px solid #30302e;
+    width: 70vw; 
+    height:80vh;
+}
+.canvas-container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#canvas {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 70vw; 
+    height:80vh;
     mix-blend-mode: soft-light;
     filter: saturate(0%)
-    contrast(400%)
-    brightness(55%)
-    opacity(80%)
-    invert(90%)
-    ;
-  }
+    contrast(1200%)
+    brightness(50%)
+    opacity(70%)
+    invert(80%);
+}
+
 
 
 #main-border {
