@@ -1659,7 +1659,7 @@ iframe {
     
     .poster-image-2 img {
       position: absolute;
-      top: 150%;
+      top: 145%;
       left: 50%;
       transform: translate(-50%, -50%);
       width:90%; 
