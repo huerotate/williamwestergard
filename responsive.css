@@ -821,7 +821,7 @@ height:auto;
   .digital-art-image-7 img {
     position: absolute;
     object-fit: contain;
-    top: 150%;
+    top: 190%;
     left: 50%;
     transform: translate(-50%, -50%);
     width:90%; 
