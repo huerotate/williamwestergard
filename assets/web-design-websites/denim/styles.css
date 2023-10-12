@@ -116,20 +116,18 @@ a:hover {
   font-size:17vw;
   line-height: 40vh;
   margin-left:-1vw;
-  z-index:10;
 }
 
 h2 {
   position:absolute;
   text-align:left;
   font-family: "CosiTimes";
-  margin-top:5%;
+  margin-top:4%;
   font-weight:500;
-  font-size:9rem;
+  font-size:17vh;
   width:30vw;
   line-height: 22vh;
   letter-spacing: .2vh;
-    z-index:10;
 }
 
 h3 {
@@ -137,11 +135,10 @@ h3 {
   text-align:center;
   font-family: "CosiTimes";
   font-weight:500;
-  font-size:7rem;
+  font-size:12vh;
   width:100%;
   line-height: 15vh;
   letter-spacing: .2vh;
-    z-index:10;
 }
 
 
@@ -257,8 +254,8 @@ transition:.3s;
 #about-page {
   display:none;
   z-index:10000;
-  margin-left:23%;
-  bottom:55%;
+  margin-left:20%;
+  bottom:60%;
   position:absolute;
 }
 
@@ -266,9 +263,9 @@ h4 {
   color:rgb(228, 224, 224);
   font-family: "CosiTimes";
   font-weight:100;
-  font-size:7rem;
+  font-size:12vh;
   width:100%;
-  line-height: 15vh;
+  line-height: 5vh;
   letter-spacing: .2vh;
 }
 
@@ -669,6 +666,27 @@ textarea {
   letter-spacing: .2vh;
   pointer-events: none;
 }
+
+#service-button {
+  margin-top: 7%;
+  padding:2vh 4vh 2vh 4vh;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  border: 1px solid white;
+  color:white;
+  border-radius: 50vh;
+  letter-spacing: 0.3vh;
+  transition: .5s;
+}
+#service-button:hover {
+  cursor:pointer;
+  background-color: rgba(140, 140, 140, 0.09);
+  border: 1px solid rgb(137, 137, 137);
+  color:rgb(137, 137, 137);
+  transition: .5s;
+}
+
+
 
 #arrow-three {
   display:none;
